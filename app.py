@@ -1,20 +1,31 @@
 from time import strftime
 from tkinter import Label, Tk
 
-#======= Configuring window =========
+# ======= Configuring window =========
 window = Tk()
 window.title("")
 window.geometry("200x80")
-window.configure(bg="green")
-window.resizable(False, False)
+window.configure(bg="green")  # =======Background of the clock=====
+window.resizable(False, False)  # =====setting a fixed window size =======
 
-clock_label = Label(window, bg="green", fg="white", font = ("Times", 30, 'bold'), relief='flat')
-clock_label.place(x = 20, y = 20)
+clock_label = Label(
+    window, bg="green", fg="white", font=("Times", 30, "bold"), relief="flat"
+)
+clock_label.place(x=20, y=20)
+
 
 def update_label():
-    current_time = strftime('%H: %M: %S')
-    clock_label.configure(text = current_time)
+    """
+    This function will update the clock
+
+    every 80 milliseconds
+    """
+    current_time = strftime("%H: %M: %S")
+    clock_label.configure(text=current_time)
     clock_label.after(80, update_label)
+
 
 update_label()
 window.mainloop()
+
+# ==============The end by github.com/kalebu ==========
