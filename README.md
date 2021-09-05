@@ -21,7 +21,8 @@ Output
 --------
 Once you run the code, it will render the output similar to what shown below;
 
-![](clock.png?raw=true)
+![digital_clock](https://user-images.githubusercontent.com/77124662/130321144-3776737b-dc39-4914-b19b-081aed8906b8.PNG)
+
 
 
 This code is the continuation of a series of Python tutorial published 
@@ -29,7 +30,7 @@ on [my blog](kalebujordan.com), and the full article with code for can
 be found on [Make a Digital Clock](https://kalebujordan.com/how-to-make-a-digital-clock-in-python/)
 
 
-Give it a star 
+Give it a star :tada:
 --------------
 Did you find this information useful, then give it a star 
 
